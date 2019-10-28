@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lexend+Deca&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9c1c9cdf2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Pomodoro Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Pomodoro Clock</h1>
+      </div>
+      <div class="timerControls">
+        <div class="workControls">
+          <h2>Work</h2>
+          <div class="controls">
+            <i id="work-up" class="fas fa-chevron-up"></i>
+            <h3 id="workTime">25</h3>
+
+            <i id="work-down" class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="restControls">
+          <h2>Rest</h2>
+          <div class="controls">
+            <i id="rest-up" class="fas fa-chevron-up"></i>
+            <h3 id="restTime">5</h3>
+
+            <i id="rest-down" class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h2 id="countdownTimer">25:00</h2>
+        <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <title>Circle Layer 1</title>
+            <circle
+              id="circle"
+              class="circle_animation"
+              r="69.85699"
+              cy="81"
+              cx="81"
+              stroke-width="8"
+              stroke="#2D332F"
+              fill="none"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="bottomControls">
+        <i id="play" class="fas fa-play"></i>
+        <i id="pause" class="fas fa-pause"></i>
+        <i class="fas fa-redo-alt"></i>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
